@@ -115,6 +115,8 @@ let boolOfHandinBox = false;
 
     let indexMaterial = 0;
     let indexMaterialClone = 0;
+
+    /*
     planeHandTransform.x = Reactive.val(1);
     planeHandTransform.y = Reactive.val(1);
 
@@ -146,8 +148,18 @@ hand.isTracked.onOff().subscribe(() => {
 
 Diagnostics.watch("hand is Tracker", hand.isTracked);
 Diagnostics.watch("plane0 with plane1", checkCollision3D(planeFace, planeHand));
-//
+*/
+face.isTracked.onOff().subscribe(() => {
+  indexMaterial = Math.floor(Math.random() * materialList.length);
+    if(indexMaterial != indexMaterialClone){
+      faceMesh.material = materialList[indexMaterial];
+      indexMaterialClone = indexMaterial;
+    }
+    //if(indexMaterial > materialList.length -1){indexMaterial = 0;}
+    //faceMesh.material = materialList[indexMaterial];
+    Diagnostics.watch("Material Index", indexMaterial);
 
+});
  
 
 
