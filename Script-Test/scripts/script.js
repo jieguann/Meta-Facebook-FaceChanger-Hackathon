@@ -7,6 +7,8 @@ const Materials = require('Materials');
 const { randomInt } = require('crypto');
 const Random = require('Random');
 
+
+/*
 function checkCollision(positionA, positionB, lengthA, lengthB) {
   return Reactive.abs(positionA.sub(positionB)).le(Reactive.add(lengthA.div(2), lengthB.div(2)));
 }
@@ -18,7 +20,7 @@ function checkCollision3D(entityA, entityB) {
       checkCollision(entityA.sceneObject.transform.z, entityB.sceneObject.transform.z, entityA.size.z, entityB.size.z)
   ]);
 }
-
+ 
 class Entity {
   constructor(name, size) {
       this.name = name;
@@ -40,7 +42,7 @@ let YButton;
 const BoundarySize = 0.5;
 
 let boolOfHandinBox = false;
-
+*/
 (async function() { // Enable async/await in JS [part 1]
 
   // Locate the plane in the scene
