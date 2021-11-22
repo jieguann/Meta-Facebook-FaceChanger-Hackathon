@@ -12,14 +12,7 @@ const Patches = require('Patches');
 
 (async function() { // Enable async/await in JS [part 1]
 
-  // Locate the plane in the scene
-  
-  //const planeFace = await Scene.root.findFirst('planeFace'); const planeFace = await new Entity("planeFace", Reactive.point(0.1, 0.1, 0.1)).create();
-  //const planeHand = await Scene.root.findFirst('planeHand');
-  
 
-  
-  // Create a reference to a detected face
     const face = FaceTracking.face(0);
 
     let indexFace = 0;
@@ -45,8 +38,7 @@ face.isTracked.onOff().subscribe(() => {
     
 
 });
-//await Patches.inputs.setScalar("indexFace", indexFace);
-//Diagnostics.watch("Material Index", indexFace);
+
 
 })(); // Enable async/await in JS [part 2]
 
