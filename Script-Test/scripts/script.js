@@ -8,7 +8,7 @@ const { randomInt } = require('crypto');
 const Random = require('Random');
 
 
-/*
+
 function checkCollision(positionA, positionB, lengthA, lengthB) {
   return Reactive.abs(positionA.sub(positionB)).le(Reactive.add(lengthA.div(2), lengthB.div(2)));
 }
@@ -42,7 +42,7 @@ let YButton;
 const BoundarySize = 0.5;
 
 let boolOfHandinBox = false;
-*/
+
 (async function() { // Enable async/await in JS [part 1]
 
   // Locate the plane in the scene
