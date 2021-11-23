@@ -2,3 +2,6 @@
 ## Meta-Facebook-FaceChanging-XRHackthone
 
 An AR performance reflecting on virtual identities. Through operatic interactions, inspired by ancient Chinese dramatic practice - BianLian 变脸
+
+## Contributors
+Jie Guan, Connor Malta, Jiamin Liu
