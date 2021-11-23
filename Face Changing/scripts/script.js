@@ -21,23 +21,35 @@ const Patches = require('Patches');
     let indexEmojiClone = 0;
 
 face.isTracked.onOff().subscribe(() => {
-    indexFace = Math.floor(Math.random() * 4);
+    indexFace = Math.floor(Math.random() * 5);
     if(indexFace != indexFaceClone){
       //faceMesh.material = materialList[indexMaterial];
       Patches.inputs.setScalar("indexFace", indexFace);
       indexFaceClone = indexFace;
     }
 
-    indexEmoji = Math.floor(Math.random() * 4);
-    if(indexEmoji != indexEmojiClone){
-      //faceMesh.material = materialList[indexMaterial];
-      Patches.inputs.setScalar("indexEmoji", indexEmoji);
-      indexEmojiClone = indexEmoji;
-    }
+ 
     
     
 
 });
+
+face.isTracked.onOff().subscribe(() => {
+  
+
+  indexEmoji = Math.floor(Math.random() * 5);
+  if(indexEmoji != indexEmojiClone){
+    //faceMesh.material = materialList[indexMaterial];
+    Patches.inputs.setScalar("indexEmoji", indexEmoji);
+    indexEmojiClone = indexEmoji; 
+  }
+  
+  
+
+});
+
+
+
 
 
 })(); // Enable async/await in JS [part 2]
